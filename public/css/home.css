@@ -1,0 +1,223 @@
+/* Header */
+
+header{
+    background-color: var(--amarillo);
+    padding-bottom: 15px;
+
+}
+header img{
+    width: 100%;
+    height: 100%;
+}
+header .encabezado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.logo{
+    padding: 10px 0 0 10px;
+    width: 40%;
+}
+
+.barraCompleta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra-busqueda{
+    font-size-adjust: 80px;    
+}
+
+.lupa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 15%;
+    height: 18px;
+    outline: 1px solid var(--grisOscuro);
+}
+
+header .h3{
+    text-align: center;
+    font-size: 12px;
+}
+
+.menu-header{
+    display: none
+}
+
+header nav ul{
+    margin: 0;
+    padding: 0;
+}
+header nav ul li a{
+    font-size: 12px;
+    color: black;
+    text-decoration: none;   
+}
+header nav ul li{
+    list-style: none;
+}
+
+.burguer-menu{
+    text-align: center;
+    width: 30px;
+    background-color: var(--celeste);
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+/*Main*/
+
+main{
+    width: 90%; 
+    margin-left: 5%;   
+}
+
+.titulares{
+    font-size: 24px;
+}
+
+.articulos{
+    background-color: var(--grisClaro);
+    padding: 15px;
+}
+
+.producto{
+    display: inline-block;
+    background-color: white;
+    margin-bottom: 10px;
+    width: 100%;    
+}
+.producto img{
+    width: 100%;
+}
+
+.detalleProducto{
+    position: relative;
+    border-top: 1px solid var(--grisClaro);
+    padding: 15px;
+    height: 140px;
+}
+
+.detalleProducto i{    
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    color: var(--verde);    
+    border: solid 1px var(--verdeOscuro);
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+ }
+
+.precio{
+    font-size: 18px;
+    padding-right: 10px;   
+}
+
+.descuento{    
+    color: var(--verdeOscuro);
+}
+
+.precioDescuento{
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.descripcion{
+    color: var(--grisOscuro);
+}
+
+/* Footer */
+
+footer{
+    background-color: white;
+    text-align: center;
+    font-size: 16px;
+    color: var(--grisOscuro);
+}    
+
+footer section i{
+    font-size: 30px;
+    color: var(--celeste);
+}
+
+
+/* Tablet*/
+
+@media (min-width: 425px) {
+    .menu-header{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 25px;
+    }
+    .encabezadoTablet{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .encabezado{
+        width: 70%;
+    }
+
+    .h3{
+        width: 30%;
+    }
+
+    nav{
+        display: flex;
+        justify-content: start;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    nav ul li a{
+        width: 15px;
+        padding: 5px;
+    }
+    .burguer-menu{
+        display: none;
+    }
+    
+    .producto{
+      box-shadow: 0px 0px 10px rgb( 100 , 100 , 100 );  
+      width: 48%;
+    }     
+}
+
+/* Desktop */
+
+@media (min-width: 900px) {    
+    main{
+        margin-left: 12%;
+    }
+    .producto{
+        box-shadow: 0px 0px 10px rgb ( 100 , 100 , 100 );
+        width: 21%;
+    }    
+}
+
+
+
+
+
+
+
+
+
